@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+    color: #2d2d2d;
+}
+
+header {
+    background-color: #1e293b;
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: #facc15;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fde68a;
+}
+
+section {
+    padding: 3rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #1e40af;
+}
+
+.project {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-4px);
+}
+
+.project h3 {
+    color: #0f172a;
+}
+
+footer {
+    background-color: #e5e7eb;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+/* 모달 스타일 */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(30, 41, 59, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 320px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    animation: popIn 0.4s ease-out;
+    display: flex;
+    flex-direction: column;
+}
+
+#projects-input {
+    max-height: 250px;
+    overflow-y: auto;
+    margin-top: 1rem;
+    padding-right: 6px;
+}
+
+.project-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+    background: #f3f4f6;
+    padding: 12px 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.project-input-group input {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 0.9rem;
+}
+
+/* 버튼 */
+#addProjectBtn {
+    background-color: #3b82f6;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+#addProjectBtn:hover {
+    background-color: #2563eb;
+}
+
+.modal-content button#submitBtn {
+    margin-top: 1.5rem;
+    padding: 0.6rem;
+    width: 100%;
+    background-color: #3b82f6;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.modal-content button#submitBtn:hover {
+    background-color: #2563eb;
+}
+
+/* ✅ 통일된 input, textarea 스타일 (높이 44px) */
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content textarea#inputBio {
+    width: 100%;
+    height: 44px; /* 통일된 높이 */
+    padding: 8px 12px;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: inherit;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    box-sizing: border-box;
+    resize: none; /* 크기 조절 비활성화 */
+    vertical-align: middle;
+    overflow: hidden; /* 내용 넘침 방지 */
+    display: inline-block; /* input과 동일하게 보이도록 */
+}
+
+.modal-content input[type="text"]:focus,
+.modal-content input[type="email"]:focus,
+.modal-content textarea#inputBio:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+/* 애니메이션 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+#editBtn:hover {
+    background-color: #2563eb;
+}
