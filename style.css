@@ -147,7 +147,7 @@ footer {
     margin: 0 auto;
 }
 
-#addProjectBtn:hover {
+button:hover {
     background-color: #2563eb;
 }
 
@@ -205,8 +205,4 @@ footer {
 @keyframes popIn {
     from { transform: scale(0.95); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
-}
-
-#editBtn:hover {
-    background-color: #2563eb;
 }
