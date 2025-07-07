@@ -188,8 +188,9 @@ button:hover {
 }
 
 .modal-content label {
-    margin-top: 5px;
+    margin-top: 7px;
 }
+
 
 /* ✅ 통일된 input, textarea 스타일 (높이 44px) */
 .modal-content input[type="text"],
@@ -216,6 +217,10 @@ button:hover {
     outline: none;
     border-color: #3b82f6;
     box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+#contact { 
+    margin-bottom: 20px;
 }
 
 /* 애니메이션 */
