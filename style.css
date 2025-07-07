@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #1e293b;
+    background-color: #2a303c;
     color: #fff;
     padding: 3rem 1rem;
     text-align: center;
@@ -31,7 +31,7 @@ nav ul {
 }
 
 nav a {
-    color: #facc15;
+    color: #3b82f6;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
@@ -51,7 +51,7 @@ section {
 h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: #1e40af;
+    color: #3b82f6;
 }
 
 .project {
@@ -106,6 +106,10 @@ footer {
     flex-direction: column;
 }
 
+.modal-content h3{
+    margin: 30px 0 0 0;
+}
+
 #projects-input {
     max-height: 250px;
     overflow-y: auto;
@@ -150,6 +154,18 @@ footer {
 button:hover {
     background-color: #2563eb;
 }
+#editBtn{
+    position:absolute; 
+    top:20px; 
+    right:20px; 
+    padding:8px 14px; 
+    border:none; 
+    background:#3b82f6; 
+    color:#fff; 
+    border-radius:8px; 
+    cursor:pointer; 
+    display:none;
+}
 
 .modal-content button#submitBtn {
     margin-top: 1.5rem;
@@ -169,12 +185,16 @@ button:hover {
     background-color: #2563eb;
 }
 
+.modal-content label {
+    margin-top: 5px;
+}
+
 /* ✅ 통일된 input, textarea 스타일 (높이 44px) */
 .modal-content input[type="text"],
 .modal-content input[type="email"],
 .modal-content textarea#inputBio {
     width: 100%;
-    height: 44px; /* 통일된 높이 */
+    height: 64px; /* 통일된 높이 */
     padding: 8px 12px;
     font-size: 1rem;
     line-height: 1.5;
